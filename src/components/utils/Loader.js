@@ -1,5 +1,4 @@
 import React from "react";
-import "../static/css/Clocks.css";
 import ClockLoader from "react-spinners/ClockLoader";
 import DefaultLoader from "react-spinners/ClipLoader";
 import { css } from "@emotion/react";

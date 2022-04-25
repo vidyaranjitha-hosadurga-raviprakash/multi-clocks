@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import "../static/css/Clocks.css";
 import ClockDisplay from "./ClockDisplay";
 import ClocksForm from "./ClocksForm";
-import Loader from "./Loader";
+import Loader from "./utils/Loader";
 
 import { allTimeZones, defaultClocks } from "./ClockGlobal";
 
