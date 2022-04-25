@@ -6,13 +6,14 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e31a5798-6d85-4cc7-a626-72f6f81d1636/deploy-status)](https://multi-clocks.netlify.app/)
 
+## Table of Contents
+
 [Reference](#reference)
+[Author](#author)
 
 ---
 
 ## Reference
-
----
 
 Resources that help in developing multi-clocks app includes
 
@@ -22,3 +23,9 @@ Resources that help in developing multi-clocks app includes
 4. **npm packages**
    - [countries-timezones](https://www.npmjs.com/package/countries-and-timezones)
    - [loaders](https://www.npmjs.com/package/react-spinners)
+
+---
+
+## Author
+
+- [Linkedin](https://www.linkedin.com/in/vidyaranjitha-raviprakash-achar-1b71b2118)
