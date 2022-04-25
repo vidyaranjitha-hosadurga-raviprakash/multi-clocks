@@ -18,14 +18,12 @@ export default function Loader(props) {
       case "ClockLoader":
         return (
           <>
-            <div className="clock-loader-icon">
-              <ClockLoader
-                size={60}
-                css={override}
-                speedMultiplier={3}
-                color={"white"}
-              ></ClockLoader>
-            </div>
+            <ClockLoader
+              size={60}
+              css={override}
+              speedMultiplier={3}
+              color={"white"}
+            ></ClockLoader>
           </>
         );
       default:
@@ -41,9 +39,9 @@ export default function Loader(props) {
   };
   return (
     <>
-      <div className="ui container clock-loader-container">
-        <div className="clock-loader-icon">{renderLoader(loaderType)}</div>
-        <div className="clock-loader-text">{loaderText}</div>
+      <div className="ui container loader-container">
+        <div className="loader-icon">{renderLoader(loaderType)}</div>
+        <div className="loader-text">{loaderText}</div>
       </div>
     </>
   );

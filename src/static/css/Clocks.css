@@ -57,24 +57,19 @@ body {
   margin-right: 1rem;
 }
 
-.clock-render-container {
-  display: block;
-  margin: auto;
-  width: 70rem;
+.clocks-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 5rem;
+  width: 70rem;
   min-height: 24rem;
 }
 
-.clock-render {
-  display: block;
-  margin: auto;
+.clocks-render {
   width: 35rem;
+  margin: auto;
 }
 
-.clock-loading {
-  min-height: 28rem;
-  width: 50rem;
-}
 .clock-display {
   color: white;
   height: 16.5rem;
@@ -180,11 +175,11 @@ footer {
   border: 0.1rem solid rgb(213, 174, 16);
 }
 
-.ui.clock-loader-container {
+.ui.loader-container {
   width: 50rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
-  min-height: 30rem;
   text-align: center;
   background: rgb(12, 74, 110, 0.6) !important;
   border: 0.5rem outset #94a3b8;
@@ -193,10 +188,10 @@ footer {
   font-size: 2rem;
   color: white !important;
   -webkit-text-stroke: 1px rgb(16, 14, 14);
-  padding: 10rem 10rem;
+  padding: 6rem;
 }
 
-.clock-loader-icon {
+.loader-icon {
   padding: 1rem;
 }
 
@@ -217,9 +212,12 @@ footer {
     margin: 1rem 0rem;
   }
 
-  .clock-render {
-    width: 23rem;
-    min-height: 33.5rem;
+  .clocks-container {
+    min-height: 32rem !important;
+  }
+
+  .clocks-render {
+    width: 24rem !important;
   }
 
   .clock-display .time div span {
@@ -242,9 +240,8 @@ footer {
     font-size: 0.7rem;
   }
 
-  .ui.clock-loader-container {
+  .ui.loader-container {
     min-height: 12rem;
-    padding: 10rem 3rem !important;
     font-size: 1rem !important;
     font-weight: 700 !important;
   }

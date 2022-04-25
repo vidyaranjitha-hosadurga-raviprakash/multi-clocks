@@ -120,12 +120,12 @@ const Clocks = () => {
         {resetClock}
       </ClocksForm>
 
-      <div className="ui container clock-render-container ">
+      <div className="ui container clocks-container ">
         {clocks.length && clocks[0].date ? (
-          <div className="clock-render">{renderClocks()}</div>
+          <div className="clocks-render">{renderClocks()}</div>
         ) : clocks.length ? (
           <>
-            <div className="clock-loader">
+            <div className="clocks-loader">
               <Loader
                 loaderText="Loading ....."
                 loaderType="ClockLoader"
