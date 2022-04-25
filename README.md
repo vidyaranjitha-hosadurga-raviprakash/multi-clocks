@@ -8,8 +8,8 @@
 
 ## Table of Contents
 
-[Reference](#reference)
-[Author](#author)
+1. [Reference](#reference)
+2. [Author](#author)
 
 ---
 
