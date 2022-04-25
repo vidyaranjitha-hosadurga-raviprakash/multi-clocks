@@ -177,7 +177,6 @@ footer {
 
 .ui.loader-container {
   width: 50rem;
-  height: 20rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -241,8 +240,7 @@ footer {
   }
 
   .ui.loader-container {
-    min-height: 12rem;
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
     font-weight: 700 !important;
   }
 }
