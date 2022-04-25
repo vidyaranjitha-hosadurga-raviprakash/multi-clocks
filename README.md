@@ -1,7 +1,6 @@
 # multi-clocks
 
-**multi-clocks app allows to track different timezones with multiple clocks.
-Multi-clocks can support upto n number of digital clocks.**
+**multi-clocks app is a simple app which allows you to track different timezones with multiple clocks. Multi-clocks can support upto n number of digital clocks.**
 
 **Take a look at [multi-clocks](https://multi-clocks.netlify.app/)**
 
@@ -13,11 +12,13 @@ Multi-clocks can support upto n number of digital clocks.**
 
 ## Reference
 
+---
+
 Resources that help in developing multi-clocks app includes
 
 1. [React Js](https://reactjs.org/)
 2. [Google Fonts](https://fonts.google.com/)
 3. [Semantic UI](https://semantic-ui.com/)
-4. npm packages :
-   a. [countries-timezones](https://www.npmjs.com/package/countries-and-timezones)
-   b. [loaders](https://www.npmjs.com/package/react-spinners)
+4. **npm packages**
+   - [countries-timezones](https://www.npmjs.com/package/countries-and-timezones)
+   - [loaders](https://www.npmjs.com/package/react-spinners)
