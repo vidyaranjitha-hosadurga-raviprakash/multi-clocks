@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #2196f3;
+  --pink-color: #ff006a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("../images/bg-clock6.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.clock-form-container {
+  display: block;
+  margin: auto;
+  align-items: center;
+  width: 55rem;
+  padding-top: 1rem;
+}
+
+.clock-form-section {
+  width: 60rem;
+  margin: 1rem 0rem;
+  align-items: center;
+}
+
+.clock-form-select {
+  height: max-content;
+  font-weight: 510;
+  cursor: "pointer";
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 0.5rem;
+  background-color: black;
+}
+
+.clock-form-select-placeholder {
+  color: #0e7490;
+}
+
+.clock-form-buttons {
+  padding-top: 1rem;
+  width: 13rem;
+  margin: auto;
+}
+
+.ui.clock-form-save {
+  margin-right: 1rem;
+}
+
+.clock-render-container {
+  display: block;
+  margin: auto;
+  width: 70rem;
+  margin-top: 5rem;
+  min-height: 34rem;
+}
+
+.clock-render {
+  display: block;
+  margin: auto;
+  width: 35rem;
+}
+
+.clock-loading {
+  min-height: 28rem;
+  width: 50rem;
+}
+.clock-display {
+  color: white;
+  height: 16.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border: 0.3rem solid white;
+  border-top-left-radius: 3rem;
+  background: rgb(6, 10, 31, 0.8);
+}
+
+.clock-display h2 {
+  position: relative;
+  display: block;
+  color: #fff;
+  text-align: left;
+  margin: 1rem 0rem 1rem 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 1em;
+  width: fit-content;
+}
+
+.clock-display button {
+  float: right;
+  font-size: 0.8rem;
+  margin-top: -1.2rem;
+  margin-right: -0.6rem;
+  border: none;
+  background: none;
+}
+
+.clock-display .time {
+  display: flex;
+}
+
+.clock-display .time div {
+  position: relative;
+  margin: 0 0.3rem;
+  -webkit-box-reflect: below 0.5px linear-gradient(transparent, #0004);
+}
+
+.clock-display .time div span {
+  position: relative;
+  display: block;
+  width: 7rem;
+  height: 4rem;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.clock-display .time div span:nth-child(2) {
+  height: 25px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  z-index: 9;
+  box-shadow: none;
+  background: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.clock-display .time div:nth-last-child(2) span {
+  background: var(--pink-color);
+}
+
+.clock-display .time div:last-child(2) span:nth-child(2) {
+  background: var(--pink-color);
+}
+
+.clock-display .time div:last-child(1) span {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 30px;
+  font-size: 1.5em;
+  background: #fff;
+  color: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+footer {
+  font-size: 1rem;
+  font-weight: 750;
+  color: rgb(213, 174, 16);
+  background-color: rgba(31, 25, 2, 0.81);
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 14rem;
+  padding: 0.2rem 0.2rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(213, 174, 16);
+}
+
+.ui.clock-loader-container {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 30rem;
+  text-align: center;
+  background: rgb(12, 74, 110, 0.6) !important;
+  border: 0.5rem outset #94a3b8;
+  border-radius: 2rem;
+  font-weight: 1000;
+  font-size: 2rem;
+  color: white !important;
+  -webkit-text-stroke: 1px rgb(16, 14, 14);
+  padding: 10rem 10rem;
+}
+
+.clock-loader-icon {
+  padding: 1rem;
+}
+
+/* Responsives for Mobiles */
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: 40rem 40rem;
+  }
+
+  .clock-form-container {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 23rem;
+  }
+
+  .clock-form-section {
+    margin: 1rem 0rem;
+  }
+
+  .clock-render {
+    width: 23rem;
+    min-height: 33.5rem;
+  }
+
+  .clock-display .time div span {
+    width: 4.4rem;
+    height: 3.3rem;
+    font-size: 2rem;
+  }
+
+  .clock-display h2 {
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+
+  .clock-display {
+    height: 13rem;
+    margin-left: 1rem;
+  }
+
+  .clock-display button {
+    font-size: 0.7rem;
+  }
+
+  .ui.clock-loader-container {
+    min-height: 12rem;
+    padding: 10rem 3rem !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+  }
+}
