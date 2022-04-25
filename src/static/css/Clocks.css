@@ -62,7 +62,7 @@ body {
   margin: auto;
   width: 70rem;
   margin-top: 5rem;
-  min-height: 34rem;
+  min-height: 24rem;
 }
 
 .clock-render {
@@ -146,11 +146,11 @@ body {
 }
 
 .clock-display .time div:nth-last-child(2) span {
-  background: var(--pink-color);
+  background: var(--pink-color) !important;
 }
 
 .clock-display .time div:last-child(2) span:nth-child(2) {
-  background: var(--pink-color);
+  background: var(--pink-color) !important;
 }
 
 .clock-display .time div:last-child(1) span {
